@@ -5,7 +5,7 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 app.use(cors({
-  origin: 'https://idriuk.github.io/cloud/'
+  origin: 'https://idriuk.github.io'
 }));
 
 

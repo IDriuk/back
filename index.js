@@ -8,6 +8,8 @@ if (process.env.NODE_ENV == 'production') {
   app.use(cors({
     origin: 'https://idriuk.github.io'
   }));
+} else {
+  app.use(cors());
 }
 
 app.get('/', (req, res) => res.send('test response'))

@@ -4,5 +4,6 @@ let temp = svg_path_example.split(/[LM]/);
 temp.splice(0, 1)
 
 const coordinates = temp.map(p => { return { x: Math.round((+p.split(',')[0])*100)/100, y: Math.round((+p.split(',')[1])*100)/100}; });
+const userName = "idriukreact";
 
-module.exports = { coordinates };
+module.exports = { coordinates, userName };

@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001
 if (process.env.NODE_ENV == 'production') {
   app.use(cors({
     origin: 'https://idriuk.github.io'
-  }));
+  }))
 } else {
   app.use(cors())
 }

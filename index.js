@@ -9,7 +9,7 @@ if (process.env.NODE_ENV == 'production') {
     origin: 'https://idriuk.github.io'
   }));
 } else {
-  app.use(cors());
+  app.use(cors())
 }
 
 app.get('/', (req, res) => res.send('test response'))
